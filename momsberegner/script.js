@@ -4,7 +4,7 @@
 function beregnBelobMedMoms(beloeb, moms = 25) { // Default parameter for moms er sat til 25
     const belobMedMoms = beloeb + (beloeb * (moms / 100)); // Beregn beløbet med moms ved at tilføje beløbet plus beløbet gange moms i procent
     console.log(`Beløbet med moms er: ${belobMedMoms}`); // Log resultatet til konsollen
-    return belobMedMoms; // Returner beløbet med moms, hvis det ønskes at bruge det senere
+    // return belobMedMoms; // Returner beløbet med moms, hvis det ønskes at bruge det senere
 }
 
 
@@ -12,3 +12,13 @@ const beloeb = 100; // Eksempel på beløb
 beregnBelobMedMoms(beloeb); // Kald funktionen med standard moms (25%)
 beregnBelobMedMoms(beloeb, 10); // Kald funktionen med 10% moms
 beregnBelobMedMoms(beloeb, 33); // Kald funktionen med 33% moms
+
+
+//anden type
+function momsBeregner(beloeb, moms = 25) {
+    console.log(beloeb + (moms / 100) * beloeb); //dette kan omskrives til en const variabel som vi så skriver til console.log bagefter, men det er ikke nødvendigt, da vi kun skal console.logge resultatet
+}
+
+momsBeregner(10);
+momsBeregner(100, 10);
+momsBeregner(33);
