@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gæt et Tal ombyttet</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+ <h1>JEG GÆTTER DIT TAL</h1>
+ <div class="yap">
+ <p>Du tænker på et tal mellem 1 og 150, og jeg prøver at gætte det!</p>
+    <br>
+   <p>Brug knapperne til at fortælle mig om jeg gætter for højt eller lavt</p>
+ </div>
+
+   <div id="game-container">
+     <button class="btn" id="start-button">START</button>
+        <span id="computerGaet"></span>
+
+        <div id="button-container">
+        <button class="btn" id="higher-button">HØJERE</button>
+        <button class="btn" id="lower-button">LAVERE</button>
+        <button class="btn" id="correct-button">KORREKT!</button>
+        </div>
+
+    </div>
+
+    <div id="result-container" class="hidden">
+        <p class="yay">Yay, jeg gættede dit tal!</p>
+        <button class="btn" id="play-again-button">SPIL IGEN</button>
+    </div>
+    </main>
+</body>
+</html>

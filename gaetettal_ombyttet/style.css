@@ -1,0 +1,148 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body{
+    background-color: #A53860;
+ font-family: "Genos", sans-serif;
+  font-optical-sizing: auto;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+main{
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 2rem;
+    background-color: #f9dbbdd5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     text-align: center;
+}
+
+#game-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#button-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 1rem;
+}
+
+.btn{
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #FFA5AB;
+     font-family: "Genos", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.btn:hover{
+    background-color: #DA627D;
+    color: #fff;
+}
+
+#start-button, #play-again-button{
+  width: 70%;
+  background-color: #d34f77;
+  font-size: 1.2rem;
+   color: #fff;
+}
+
+#start-button:hover, #play-again-button:hover{
+  background-color: #a53860;
+}
+
+h1{
+    color: #450920;
+padding-bottom: 1rem;
+}
+
+.yap{
+    color: #450920;
+    margin-bottom: 1rem;
+}
+
+#result-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  #result-container.hidden{
+    display: none;
+}
+
+.party{
+     animation: color 5s ease-in-out;
+}
+
+@keyframes color {
+  0% {
+  background-color: #9c1338;
+  }
+  16% {
+   background-color: #9c1371;
+  }
+  24% {
+      background-color: #133c9c;
+  }
+  32% {
+      background-color: #490872;
+  }
+  48% {
+   background-color: #9c135a;
+  }
+  56% {
+   background-color: #651a60;
+  }
+  64% {
+   background-color: #5b349f;
+  }
+  80% {
+    background-color: #2d80a1;
+  }
+  96% {
+  background-color: #c876a0;
+  }
+  100% {
+    background-color: #d374eb;
+  }
+}
+
+.yay{
+    font-size: 2rem;
+    color: #450920;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.btn:hover:not(:disabled) {
+    background-color: #DA627D;
+    color: #fff;
+}
