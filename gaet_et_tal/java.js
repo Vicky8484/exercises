@@ -1,11 +1,15 @@
 //1. Lav en funktion der console.logger et tilfældigt tal fra og med 0 til og med 100
 //2. Opdater din funktion så den skriver det tilfædige tal til HTML.
 
-const gæt = document.querySelector(".gæt");
-const tallet = TilfTal();
-const knap = document.querySelector(".button");
-const feedback = document.querySelector(".feedback");
-const kitty = document.querySelector(".bear");
+import { dqs } from "../utils_lib/bibliotek.js"; //importerer "TilfTal" funktionen
+import { TilfTal } from "../utils_lib/bibliotek.js";
+
+
+const gæt = dqs(".gæt");
+const tallet = TilfTal(5);
+const knap = dqs(".button");
+const feedback = dqs(".feedback");
+const kitty = dqs(".bear");
 
 console.log(tallet);
 
@@ -26,9 +30,9 @@ function TjekTal() {
   //hvis tallet er lig med gættet, så skrives "Du har gættet rigtigt"
 }
 
-function TilfTal() {
-  return Math.floor(Math.random() * 100);
-}
+// function TilfTal(max) {
+//   return Math.floor(Math.random() * max);
+// } kan fjernes, fordi den importeres fra bibliotek.js
 
 // console.log(gæt);
 // console.log(typeof gæt.value);
