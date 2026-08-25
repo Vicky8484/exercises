@@ -9,7 +9,6 @@ ul {
 }
 
 li {
-    /* --height: 40; */
     inline-size: 3ch;
     height: calc(var(--height) * 1px);
     background: color-mix(in hsl, red, green calc(var(--height) * 1%));

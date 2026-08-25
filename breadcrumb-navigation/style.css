@@ -1,0 +1,41 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body{
+    background-color: #bbbbbb;
+     font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+main{
+width: 80%;
+height: 100vh;
+margin: auto;
+padding: 4rem;
+background-color: #fff;
+text-align: center;
+}
+
+button{
+    padding: 1rem;
+    padding-block: 0.5rem;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    padding-top: 2rem;
+    justify-content: center;
+}
+
