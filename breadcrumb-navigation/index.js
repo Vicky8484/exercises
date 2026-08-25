@@ -28,5 +28,7 @@ function generateBreadcrumbPath() {
          .map((item, index) => index === bc.length - 1 //kalder hvert element item. Siger at hvis index er det sidte element i arrayet
             ? `<li>${item.name}</li>` //skal der ikke være link, kun navn
             : `<li><a href="${item.link}">${item.name}</a></li>`) //alle andre elementer får både navn og link
-        .join("/");
+        .join("/"); 
+
+        //Brug af arrow funktion med ternary i stedet for funktion med if-sætning
     }
