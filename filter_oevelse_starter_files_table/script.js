@@ -35,7 +35,7 @@ function showTheseVehicles(arr) {
     tbodyPointer.innerHTML += `<tr>
   <td>${each.type ? each.type : ""}</td>
   <td>${each.fuel ? each.fuel : "🤷‍♀️"}</td>
-  <td>${each.passengers ? each.passengers : ""}</td> 
+  <td>${each.passengers ?? ""}</td> 
   <td>${each.stops ? each.stops : ""}</td>
   <td>${each.ownedBy ? each.ownedBy : ""}</td>
   <td>${each.isElectric ? "Yes" : ""}</td>
@@ -56,11 +56,21 @@ const filters = {
   alle: vehicles,
 };
 
+
+
 //vi henter alle knapperne og siger, at for hver knap skal der være en event listener
 //som peger til skemaets indre html og skifter indholdet ud vha showTheseVehicles()
 document.querySelectorAll("button").forEach((button) => {
   button.addEventListener("click", () => {
+
+    document.querySelectorAll("button").forEach((btn) => {
+      btn.classList.remove("clickedBtn");
+    }); //fjerner class fra alle knapper til at starte med, så farven bliver væk hver gang man trykker på noget andet
+
+    button.classList.add("clickedBtn");
     tbodyPointer.innerHTML = "";
     showTheseVehicles(filters[button.dataset.filter]); //button.dataset.filter læser værdien fra knappen
   });
 });
+
+//${each.passengers ?? ""} nullish coalescing i stedet for normal ternary

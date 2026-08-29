@@ -1,0 +1,152 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100vh;
+  background-color: #CAD2C5;
+    font-family: "Gudea", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+select{
+      font-family: "Gudea", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #52796F;
+  color:#CAD2C5;
+  width: 170px;
+  padding-block: 0.5rem;
+  border-radius: 5px;
+}
+
+option{
+    padding-block: 0.5rem;
+  border-radius: 5px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* header*/
+header{
+    height: 4rem;
+    background-color: #2F3E46;
+    color: #fff;
+    padding: 1rem;
+     display: flex;
+    justify-content: space-between
+}
+
+img{
+    width: 150px;
+}
+
+/*main*/
+main{
+  display: flex;
+  overflow-x: auto;
+  width: calc(100% - 4rem);
+  height: calc(100vh - 11rem);
+  gap: 20px;
+  padding-bottom: 1rem;
+  margin: 1rem;
+  margin-block: 2rem;
+}
+
+main::-webkit-scrollbar {
+  height: 16px;
+}
+
+main::-webkit-scrollbar-track {
+  background: #CAD2C5;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #354f52b7;
+  border-radius: 5px;
+}
+
+main::-webkit-scrollbar-thumb:hover {
+  /* background: #354f52; */
+   background: #355240;
+  border-radius: 5px;
+}
+
+main article {
+  flex: 0 0 300px;
+}
+
+h1{
+     font-family: "Gluten", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+article{
+ background-color: #84A98C;
+ border-radius: 20px;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ padding: 1rem;
+}
+
+article img {
+  align-self: center;
+  object-fit: fill;
+  width: 100%;
+  height: 200px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+article p {
+  margin-top: auto; /*skubber det ned i bunden*/
+  margin-top: 1.5rem;
+  color: #2F3E46;
+}
+
+
+/*footer*/
+footer{
+  overflow: hidden;
+  height: 8rem;
+    background-color:#52796F;
+    color: #fff;
+    padding: 1rem
+}
+
+   /* Selve båndet / containeren */
+  .footer {
+    width: 100%;
+    overflow: hidden; /* Skjuler teksten uden for båndet */
+    color: #fff;
+    padding: 10px 0;
+    white-space: nowrap; /* Sikrer at teksten forbliver på én linje */
+    font-weight: 200;
+    font-style: italic;
+  }
+
+  /* Teksten der bevæger sig */
+  .footer p {
+    display: inline-block;
+    padding-left: 100%; /* Starter teksten helt ude i højre side */
+    animation: rullebaand 20s linear infinite; /* Hastighed og gentagelse */
+    margin: 0;
+  }
+
+  /* Animationen fra højre til venstre */
+  @keyframes rullebaand {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+  }

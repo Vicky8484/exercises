@@ -89,9 +89,14 @@ button{
   font-style: normal;
 }
 
-button:hover{
+/* button:hover{
     background-color: #D7EAE8;
     color: #375C5B;
+} */
+
+.clickedBtn {
+ background-color: #336118;
+    color: #ffffff;
 }
 
 #btnContainer{
