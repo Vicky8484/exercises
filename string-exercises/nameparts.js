@@ -14,13 +14,21 @@ const secondSpace = fullName.indexOf(" ", firstSpace + 1); //indexOf(" ", firstS
 //substring(start, slut) tager den del af teksten, der ligger mellem disse positioner
 
 const firstName = fullName.substring(0, firstSpace); //fullName.substring(0, firstSpace) = fra start til første mellemrum
-const middleName = fullName.substring(firstSpace + 1, secondSpace); //fullName.substring(firstSpace + 1, secondSpace) = mellem første og anden mellemrumsposition
+const middleName = fullName.substring(firstSpace + 1, secondSpace); //fullName.substring(firstSpace + 1, secondSpace) = mellem første og anden mellemrumsposition. +1 betyder "flyt én karakter frem"
 const lastName = fullName.substring(secondSpace + 1); //fullName.substring(secondSpace + 1) = fra anden mellemrumsposition til slut
 
 console.log(firstName);
 console.log(middleName);
 console.log(lastName);
 
+//Anden måde at gøre det på
+const fName = fullName.substring(0, fullName.indexOf(" "));
+console.log(fName);
+
+//Tredje måde at gøre det på
+console.log(fullName.split(" ")) //giver et array med navnene i som man kan arbejde videre med
+const splittedStr = fullName.split(" ");
+console.log(splittedStr);
 
 // OPGAVE 2
 // Where the middleName would end up being "Percival Wulfric Brian".
