@@ -59,7 +59,6 @@ function initializeBadWords(){
   let text = sentence.textContent;
   
   curseWords.forEach(item => {
-    // const bad = new RegExp(item.bad, 'gi');
     text = text.replace(item.bad, `<span class="badWords">${item.bad}</span>`);
   });
   
