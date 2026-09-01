@@ -1,0 +1,32 @@
+[data-filter=fox]{
+    background-color: brown;
+    color: white;
+}
+
+[data-filter=cat]{
+    background-color: #000;
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    border-radius: 20px;
+    gap: 2rem;
+}
+
+div {
+    width: 100%;
+    margin: auto;
+    padding-block: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button{
+width: 50%;
+margin: auto;
+padding-block: 0.5rem;
+}

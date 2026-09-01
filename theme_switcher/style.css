@@ -1,0 +1,98 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*******************************************/
+
+body {
+  height: 100vh;
+    font-family: "Gudea", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: var(--footerbg);
+  overflow-y: hidden;
+}
+
+select{
+      font-family: "Gudea", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--bodybg);
+  color: var(--textcolor);
+  width: 170px;
+  padding-block: 0.3rem;
+  border-radius: 5px;
+}
+
+option{
+    padding-block: 0.5rem;
+  border-radius: 5px;
+}
+
+/* header*/
+header{
+    height: 5rem;
+    color: #fff;
+    padding: 1rem;
+     display: flex;
+    justify-content: space-between;
+    background: var(--headerbg);
+}
+
+.selectBox{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+label{
+    color: var(--textcolor);
+    align-items: center;
+}
+
+img{
+    width: 150px;
+}
+
+/*main*/
+main{
+padding: 1rem;
+padding-bottom: 3rem;
+ background: var(--bodybg);
+}
+
+h1{
+    color: var( --h1color);
+    font-size: 16vh;
+    font-family: var(--fontfam);
+}
+
+p{
+    color: var( --textcolor);
+    font-family: "Gudea", sans-serif;
+}
+
+article{
+width: 65ch;
+padding-top: 1rem;
+}
+
+/* footer*/
+footer{
+     background: var(--footerbg);
+     height: 4rem;
+     display: flex;
+     justify-content: flex-end;
+     padding-right: 2rem;
+     font-size: 3rem;
+     align-items: center;
+}
