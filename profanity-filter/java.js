@@ -28,8 +28,7 @@ function changeWords(){
   
   // 2. Loop gennem hvert ord-par i arrayet og erstat
   curseWords.forEach(item => {
-    const bad = new RegExp(item.bad, 'gi');  // brug af new RegExp(pattern, flags) pattern, læs mere linje 57
-text = text.replace(bad, `<span class="goodWords">${item.good}</span>`);
+text = text.replace(item.bad, `<span class="goodWords">${item.good}</span>`);
   });
   
   // 3. Sæt den opdaterede tekst tilbage
@@ -46,8 +45,7 @@ function changeWords2(){
   
   // 2. Loop gennem hvert ord-par i arrayet
   curseWords.forEach(item => {
- const good = new RegExp(item.good, 'gi');  // 
-text = text.replace(good, `<span class="badWords">${item.bad}</span>`);
+text = text.replace(item.good, `<span class="badWords">${item.bad}</span>`);
   });
   
   // 3. Sæt den opdaterede tekst tilbage
@@ -61,8 +59,8 @@ function initializeBadWords(){
   let text = sentence.textContent;
   
   curseWords.forEach(item => {
-    const bad = new RegExp(item.bad, 'gi');
-    text = text.replace(bad, `<span class="badWords">${item.bad}</span>`);
+    // const bad = new RegExp(item.bad, 'gi');
+    text = text.replace(item.bad, `<span class="badWords">${item.bad}</span>`);
   });
   
   sentence.innerHTML = text;
@@ -75,7 +73,7 @@ document.addEventListener("DOMContentLoaded", initializeBadWords);
 
 
 
-
+// const bad = new RegExp(item.bad, 'gi');  // brug af new RegExp(pattern, flags) pattern, læs mere linje 57
 // new RegExp(pattern, flags)
 // RegExp står for regular expression
 // funktionen henter parametre pattern og flags
