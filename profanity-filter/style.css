@@ -1,0 +1,93 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body{
+    background-image: url(./3394.jpg);
+  background-size: cover;
+  background-position: center;
+   font-family: "Intel One Mono", monospace;
+  font-optical-sizing: auto;
+}
+
+main{
+     background-color: #89c8ffde;
+     margin: 2rem auto;
+     width: 60%;
+     border-radius: 20px;
+     padding: 2rem 1rem;
+     text-align: center;
+}
+
+h1{
+color: #daef88;
+}
+
+.badWords{
+color: #ba3b3b;
+font-family: "Joti One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.goodWords{
+color: #245a26;
+font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btnBox{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto;
+}
+
+#goodBtn{
+    width: 300px;
+    margin: auto;
+    background-color: #678d26;
+}
+
+#goodBtn:disabled{
+    width: 300px;
+    margin: auto;
+  background-color: #678d266c;
+          color: #ffffff93;
+}
+
+#badBtn{
+    width: 280px;
+    margin: auto;
+    background-color: #8d3626;
+}
+
+#badBtn:disabled{
+    width: 280px;
+    margin: auto;
+    background-color: #8d3626a8;
+    color: #ffffff93;
+}
+
+button{
+    padding-block: 1rem;
+    font-size: 1.2rem;
+font-family: "Intel One Mono", monospace;
+  font-optical-sizing: auto;
+  border-radius: 10px;
+  color: #fff;
+}
+
+button:hover{
+    filter:brightness(80%);
+}
