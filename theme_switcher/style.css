@@ -71,7 +71,7 @@ padding-bottom: 3rem;
 
 h1{
     color: var( --h1color);
-    font-size: 16vh;
+    font-size: 14vh;
     font-family: var(--fontfam);
 }
 
