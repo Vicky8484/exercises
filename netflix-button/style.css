@@ -1,3 +1,72 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/****************/
+body{
+	background-color:#181818;
+	padding: 1rem;
+	align-items: center;
+	justify-content: center;
+}
+
+main{
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	width: 80%;
+	margin: 1rem auto;
+	border-radius: 20px;
+	height: 90vh;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	font-family: "Jaro", sans-serif;
+	color: #fff;
+}
+
+main::before {
+	position: absolute;
+	inset: -12px;
+	z-index: -1;
+	background: url(./lavender-field-sunset-near-valensole.jpg) center / cover no-repeat;
+	filter: blur(10px);
+	content: "";
+}
+
+.btnBox{
+border-top: #dedede solid 4px;
+margin: 2rem;
+padding: 2rem;
+}
+
+h1{
+	font-size: 8vh;
+	font-weight: 200;
+	text-shadow: #181818 2px 4px 6px;
+}
+
+.tilbage{
+	font-size: 1.2rem;
+	font-family: "Jaro", sans-serif;
+	color: #fff;
+	text-decoration: none;
+}
+
+.tilbage:hover{
+	color: #5d3259;
+}
+
 button {
 	position: relative;
 	overflow: hidden;
@@ -9,6 +78,8 @@ button {
 	color: white;
 	font-size: 1rem;
 	cursor: pointer;
+		font-family: "Jaro", sans-serif;
+		font-weight: 200;
 }
 
 button::before {
