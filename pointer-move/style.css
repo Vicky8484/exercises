@@ -1,6 +1,9 @@
 :root {
         --lightness: 50%;
         --saturation: 50%;
+        --red: 128;
+        --green: 128;
+        --blue: 127;
     }
 
     body {
@@ -9,4 +12,12 @@
             var(--saturation)
             var(--lightness)
         );
+          color: rgb(var(--red), var(--green), var(--blue));
+font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 10vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
     }
+
