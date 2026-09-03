@@ -1,0 +1,12 @@
+:root {
+        --lightness: 50%;
+        --saturation: 50%;
+    }
+
+    body {
+        background-color: hsl(
+            200
+            var(--saturation)
+            var(--lightness)
+        );
+    }

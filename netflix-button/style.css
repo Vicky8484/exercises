@@ -1,0 +1,29 @@
+button {
+	position: relative;
+	overflow: hidden;
+	isolation: isolate;
+	padding: 1rem 2rem;
+	border: 2px solid #e50914;
+	border-radius: 4px;
+	background-color: #181818;
+	color: white;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+button::before {
+	position: absolute;
+	z-index: -1;
+	inset: 0;
+	background-color: #e50914;
+	content: "";
+	transform: scaleX(0);
+	transform-origin: left;
+	animation: fill-button 4s linear forwards;
+}
+
+@keyframes fill-button {
+	to {
+		transform: scaleX(1);
+	}
+}
